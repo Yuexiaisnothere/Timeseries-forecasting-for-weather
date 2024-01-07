@@ -161,7 +161,7 @@ dataset_train = keras.preprocessing.timeseries_dataset_from_array(
     batch_size=batch_size,
 )
 ```
-
+* 驗證資料集
 ```Python
 x_end = len(val_data) - past - future
 
@@ -185,7 +185,8 @@ for batch in dataset_train.take(1):
 print("Input shape:", inputs.numpy().shape)
 print("Target shape:", targets.numpy().shape)
 ```
-* 驗證資料集
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/3.PNG)
+* 訓練
 ```Python
 inputs = keras.layers.Input(shape=(inputs.shape[1], inputs.shape[2]))
 lstm_out = keras.layers.LSTM(32)(inputs)
@@ -195,8 +196,7 @@ model = keras.Model(inputs=inputs, outputs=outputs)
 model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate), loss="mse")
 model.summary()
 ```
-![image](https://github.com/Yuexiaisnothere/weather/blob/main/3.PNG)
-* 訓練
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/4.PNG)
 ```Python
 path_checkpoint = "model_checkpoint.weights.h5"
 es_callback = keras.callbacks.EarlyStopping(monitor="val_loss", min_delta=0, patience=5)
@@ -216,7 +216,7 @@ history = model.fit(
     callbacks=[es_callback, modelckpt_callback],
 )
 ```
-![image](https://github.com/Yuexiaisnothere/weather/blob/main/4.PNG)
+
 ```Python
 def visualize_loss(history, title):
     loss = history.history["loss"]
