@@ -104,7 +104,7 @@ def show_raw_visualization(data):
 show_raw_visualization(df)
 ```
 
-![image](https://github.com/Yuexiaisnothere/weather/blob/main/weather1.ipynb)
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/1.png?raw=true))
 
 * 資料預處理
 ```Python
