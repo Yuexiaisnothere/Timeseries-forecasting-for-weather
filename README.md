@@ -234,9 +234,8 @@ def visualize_loss(history, title):
 
 visualize_loss(history, "Training and Validation Loss")
 ```
-*  
-   * 圖表化
-   ![image](https://github.com/Yuexiaisnothere/weather/blob/main/6.png)
+圖表化
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/6.png)
 * 預言
 ```Python
 def show_plot(plot_data, delta, title):
