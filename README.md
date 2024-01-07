@@ -8,14 +8,15 @@
 * 準備一個可以使用Google Colaboratory的帳號
 * 請下載我們提供的:「Weather1.ipynb」
 # 實作方法
-** 用googlecolab開啟我們提供的Weather1.ipynb檔案
-** 設定
+* 用googlecolab開啟我們提供的Weather1.ipynb檔案
+* 設定
 ```Python
 import pandas as pd
 import matplotlib.pyplot as plt
 import keras
 ```
-** 氣候資料時間序列
+* 氣候資料時間序列
+    * 我們將使用 馬克斯普朗克生物地球化學研究所記錄的耶拿氣候資料集
 ```Python
 from zipfile import ZipFile
 
@@ -27,6 +28,7 @@ csv_path = "jena_climate_2009_2016.csv"
 
 df = pd.read_csv(csv_path)
 ```
+* 
 ```Python
 titles = [
     "Pressure",
