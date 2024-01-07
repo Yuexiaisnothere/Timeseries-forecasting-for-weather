@@ -8,13 +8,14 @@
 * 準備一個可以使用Google Colaboratory的帳號
 * 請下載我們提供的:「Weather1.ipynb」
 # 實作方法
-* 用googlecolab開啟我們提供的Weather1.ipynb檔案
+** 用googlecolab開啟我們提供的Weather1.ipynb檔案
+** 設定
 ```Python
 import pandas as pd
 import matplotlib.pyplot as plt
 import keras
 ```
-
+** 氣候資料時間序列
 ```Python
 from zipfile import ZipFile
 
