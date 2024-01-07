@@ -1,4 +1,4 @@
-# weather
+# Timeseries forecasting for weather prediction
 * 南華大學跨領域-人工智慧 期末報告
    * 天氣預報的時間序列預測
 * 11124131陳毅倫 11124129吳張傑
