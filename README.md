@@ -218,6 +218,7 @@ history = model.fit(
 ```
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/5.PNG)
 ```Python
+圖表化<br>
 def visualize_loss(history, title):
     loss = history.history["loss"]
     val_loss = history.history["val_loss"]
@@ -234,7 +235,6 @@ def visualize_loss(history, title):
 
 visualize_loss(history, "Training and Validation Loss")
 ```
-   * 圖表化<br>
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/6.png)
 * 預言
 ```Python
