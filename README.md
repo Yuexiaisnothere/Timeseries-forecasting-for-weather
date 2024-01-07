@@ -103,7 +103,9 @@ def show_raw_visualization(data):
 
 show_raw_visualization(df)
 ```
+
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/weather1.ipynb)
+
 * 資料預處理
 ```Python
 split_fraction = 0.715
