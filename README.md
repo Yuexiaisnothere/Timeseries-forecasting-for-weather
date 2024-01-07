@@ -9,7 +9,7 @@
 * 準備一個可以使用Google Colaboratory的帳號
 * 請下載我們提供的:「Weather1.ipynb」
 # 注意事項
-* 由於在keras上的程式碼在使用是會出現錯誤，所以從作者的github找到了相關的程式碼
+* 由於在keras上的程式碼在使用是會出現錯誤，所以從作者的github找到並且引用相關的程式碼
 # 實作方法
 * 用googlecolab開啟我們提供的Weather1.ipynb檔案
 * 設定
