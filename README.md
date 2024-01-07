@@ -104,7 +104,7 @@ def show_raw_visualization(data):
 show_raw_visualization(df)
 ```
 
-![image](https://github.com/Yuexiaisnothere/weather/blob/main/1.png?raw=true))
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/1.png)
 
 * 資料預處理
 ```Python
@@ -141,6 +141,7 @@ features.head()
 train_data = features.loc[0 : train_split - 1]
 val_data = features.loc[train_split:]
 ```
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/2.PNG)
 * 訓練資料集
 ```Python
 start = past + future
