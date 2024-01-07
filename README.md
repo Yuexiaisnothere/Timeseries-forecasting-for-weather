@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import keras
 ```
 * 氣候資料時間序列
-    * 我們將使用 馬克斯普朗克生物地球化學研究所記錄的耶拿氣候資料集
+    * 我們將使用馬克斯普朗克生物地球化學研究所記錄的耶拿氣候資料集
 ```Python
 from zipfile import ZipFile
 
@@ -28,7 +28,7 @@ csv_path = "jena_climate_2009_2016.csv"
 
 df = pd.read_csv(csv_path)
 ```
-* 
+* 原始數據可視化
 ```Python
 titles = [
     "Pressure",
@@ -103,7 +103,7 @@ def show_raw_visualization(data):
 
 show_raw_visualization(df)
 ```
-
+* 資料預處理
 ```Python
 split_fraction = 0.715
 train_split = int(split_fraction * int(df.shape[0]))
@@ -138,7 +138,7 @@ features.head()
 train_data = features.loc[0 : train_split - 1]
 val_data = features.loc[train_split:]
 ```
-
+* 訓練資料集
 ```Python
 start = past + future
 end = start + train_split
@@ -181,7 +181,7 @@ for batch in dataset_train.take(1):
 print("Input shape:", inputs.numpy().shape)
 print("Target shape:", targets.numpy().shape)
 ```
-
+* 驗證資料集
 ```Python
 inputs = keras.layers.Input(shape=(inputs.shape[1], inputs.shape[2]))
 lstm_out = keras.layers.LSTM(32)(inputs)
@@ -191,7 +191,7 @@ model = keras.Model(inputs=inputs, outputs=outputs)
 model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate), loss="mse")
 model.summary()
 ```
-
+* 訓練
 ```Python
 path_checkpoint = "model_checkpoint.weights.h5"
 es_callback = keras.callbacks.EarlyStopping(monitor="val_loss", min_delta=0, patience=5)
@@ -229,7 +229,7 @@ def visualize_loss(history, title):
 
 visualize_loss(history, "Training and Validation Loss")
 ```
-
+* 預言
 ```Python
 def show_plot(plot_data, delta, title):
     labels = ["History", "True Future", "Model Prediction"]
