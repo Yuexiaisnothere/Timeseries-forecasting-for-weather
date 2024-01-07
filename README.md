@@ -216,7 +216,7 @@ history = model.fit(
     callbacks=[es_callback, modelckpt_callback],
 )
 ```
-![image](https://github.com/Yuexiaisnothere/weather/blob/main/5.PNG)
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/5.PNG)<br>
 圖表化<br>
 ```Python
 def visualize_loss(history, title):
