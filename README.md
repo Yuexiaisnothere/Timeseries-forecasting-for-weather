@@ -2,14 +2,21 @@
 * 南華大學跨領域-人工智慧 期末報告
    * 天氣預報的時間序列預測
 * 11124131陳毅倫 11124129吳張傑
+  
 # 目錄
 * 準備資料
 * 實作方法
+  
 # 準備資料
 * 準備一個可以使用Google Colaboratory的帳號
 * 請下載我們提供的:「Weather1.ipynb」
+  
 # 注意事項
 * 由於在keras上的程式碼在使用是會出現錯誤，所以從作者的github找到並且引用相關的程式碼
+# 資料來源
+  * [https://keras.io/examples/timeseries/timeseries_weather_forecasting/](https://keras.io/examples/timeseries/timeseries_weather_forecasting/)
+  * [https://github.com/keras-team/keras-io/blob/master/examples/timeseries/timeseries_weather_forecasting.py](https://github.com/keras-team/keras-io/blob/master/examples/timeseries/timeseries_weather_forecasting.py)
+
 # 實作方法
 * 用googlecolab開啟我們提供的Weather1.ipynb檔案
 * 設定
@@ -275,7 +282,3 @@ for x, y in dataset_val.take(5):
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/9.png)
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/10.png)
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/11.png)
-
-* 資料來源
-  * [https://keras.io/examples/timeseries/timeseries_weather_forecasting/](https://keras.io/examples/timeseries/timeseries_weather_forecasting/)
-  * [https://github.com/keras-team/keras-io/blob/master/examples/timeseries/timeseries_weather_forecasting.py](https://github.com/keras-team/keras-io/blob/master/examples/timeseries/timeseries_weather_forecasting.py)
