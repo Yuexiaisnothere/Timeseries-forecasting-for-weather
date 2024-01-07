@@ -272,3 +272,6 @@ for x, y in dataset_val.take(5):
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/9.png)
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/10.png)
 ![image](https://github.com/Yuexiaisnothere/weather/blob/main/11.png)
+
+* 資料來源
+  [https://keras.io/examples/timeseries/timeseries_weather_forecasting/](https://keras.io/examples/timeseries/timeseries_weather_forecasting/)
