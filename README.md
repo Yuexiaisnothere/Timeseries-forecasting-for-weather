@@ -1,5 +1,5 @@
 # weather
-* 南華大學跨領域-人工智慧 期中報告<br>
+* 南華大學跨領域-人工智慧 期末報告<br>
 * 11124131陳毅倫 11124129吳張傑<br>
 # 目錄
 * 準備資料
@@ -195,6 +195,7 @@ model = keras.Model(inputs=inputs, outputs=outputs)
 model.compile(optimizer=keras.optimizers.Adam(learning_rate=learning_rate), loss="mse")
 model.summary()
 ```
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/3.PNG)
 * 訓練
 ```Python
 path_checkpoint = "model_checkpoint.weights.h5"
@@ -215,7 +216,7 @@ history = model.fit(
     callbacks=[es_callback, modelckpt_callback],
 )
 ```
-
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/4.PNG)
 ```Python
 def visualize_loss(history, title):
     loss = history.history["loss"]
