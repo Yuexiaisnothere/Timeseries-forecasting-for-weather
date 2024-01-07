@@ -216,7 +216,7 @@ history = model.fit(
     callbacks=[es_callback, modelckpt_callback],
 )
 ```
-
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/5.PNG)
 ```Python
 def visualize_loss(history, title):
     loss = history.history["loss"]
@@ -234,6 +234,8 @@ def visualize_loss(history, title):
 
 visualize_loss(history, "Training and Validation Loss")
 ```
+   * 圖表化
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/6.PNG)
 * 預言
 ```Python
 def show_plot(plot_data, delta, title):
