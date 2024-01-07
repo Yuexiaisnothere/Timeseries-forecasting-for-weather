@@ -267,3 +267,8 @@ for x, y in dataset_val.take(5):
         "Single Step Prediction",
     )
 ```
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/7.png)
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/8.png)
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/9.png)
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/10.png)
+![image](https://github.com/Yuexiaisnothere/weather/blob/main/11.png)
